@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="com.naikvarun.lab.rcp.app.customproject"
+         name="Custom Category"
+         point="org.eclipse.core.resources.natures">
+      <runtime>
+         <run
+               class="com.naikvarun.lab.rcp.app.project.CustomProjectNature">
+         </run>
+      </runtime>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.naikvarun.lab.rcp.app.nature.customproject"
+            name="Custom Category">
+      </category>
+      <wizard
+            category="com.naikvarun.lab.rcp.app.nature.customproject"
+            class="com.naikvarun.lab.rcp.app.project.CustomProjectWizard"
+            icon="icons/swap32.png"
+            id="com.naikvarun.lab.rcp.app.project.wizard.custom"
+            name="Custom Project">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            id="com.naikvarun.lab.rcp.app.project.decorator1"
+            label="label">
+      </decorator>
+   </extension>
+</plugin>

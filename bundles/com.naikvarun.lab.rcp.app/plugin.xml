@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.naikvarun.lab.rcp.app.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.naikvarun.lab.rcp.app.Perspective"
+            id="com.naikvarun.lab.rcp.app.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.naikvarun.lab.rcp.app.application"
+            name="Sample APP">
+         <property
+               name="applicationXMI"
+               value="com.naikvarun.lab.rcp.app/Application.e4xmi">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.naikvarun.lab.rcp.app/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="Sample APP">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

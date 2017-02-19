@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_kh2pMN71EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_l7wbYN71EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.trimmedwindow.main" label="Sample RCP" iconURI="platform:/plugin/com.naikvarun.lab.rcp.app/icons/mi-swap-16.png" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_-OkfAN71EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_-uANAN71EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.perspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ARMeEN72EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.partsashcontainer.0" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_BGThIN72EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.partstack.navigation" containerData="2500">
+            <children xsi:type="advanced:Placeholder" xmi:id="_EIs7IN72EeaRZc-9aao9Nw" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_yDV4QN71EeaRZc-9aao9Nw"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_Ck5mEN72EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.partstack.data" containerData="7500"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_oGaVEN71EeaRZc-9aao9Nw" elementId="com.naikvarun.lab.rcp.app.menu.0"/>
+    <sharedElements xsi:type="basic:Part" xmi:id="_yDV4QN71EeaRZc-9aao9Nw" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/com.naikvarun.lab.rcp.app.project/icons/fa-tasks-16.pngs-16.png"/>
+  </children>
+  <addons xmi:id="_kh2pMd71EeaRZc-9aao9Nw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_kh2pMt71EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_kh2pM971EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_kh2pNN71EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_kh2pNd71EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_kh2pNt71EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_kh2pN971EeaRZc-9aao9Nw" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>
